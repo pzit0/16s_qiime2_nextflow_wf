@@ -31,3 +31,8 @@
 2026-06-01 14:26:59	2.8s	nice_goldstine	OK	3f91415e83c469b01cb4ec018f09bd88	64bad312-643a-42d7-83b1-48c5b45682bb	nextflow run fastqc.nf
 2026-06-01 14:31:05	2.6s	agitated_cuvier	OK	e180c63a8f3ca1865eacdaa6f3e64136	a81bf61b-8954-49e2-a7a3-c6127c3bee71	nextflow run fastqc.nf
 2026-06-01 14:34:06	17.2s	shrivelled_bohr	OK	ec72b3a243d0dc8e7a2e8f04de28b0ad	21b76001-01f9-47d5-9ab9-813f639dccd4	nextflow run fastqc.nf
+2026-06-05 16:09:01	-	curious_dijkstra	-	154efe1c854e785d247f295b1f9f4b1b	1417b3ea-7eff-48f5-b357-c943d80a8746	nextflow run main_test.nf
+2026-06-05 17:07:55	-	awesome_woese	-	964dbcf8845b5b7c148e818f246d9036	8442ed89-c7a6-4886-8857-8ab494ef1c6a	nextflow run main_test.nf -profile local
+2026-06-05 17:08:57	-	ridiculous_edison	-	d458dcf0150ac205c1df79a496075a91	9163ca9b-e88c-423c-8bc5-b09aac343dff	nextflow run main_test.nf -profile local
+2026-06-05 17:11:43	1m 42s	compassionate_church	ERR	76b8225bfadea83644180845269ea047	caf484af-d4ae-48ab-aff9-cf48358a837e	nextflow run main_test.nf -profile local
+2026-06-05 17:13:48	57.2s	zen_mclean	ERR	76b8225bfadea83644180845269ea047	d1ad9ca4-2b9e-457e-b78b-365a7dbfecd9	nextflow run main_test.nf -profile local -with-report report-config-p1.html
