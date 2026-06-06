@@ -13,7 +13,8 @@ process P1_IMPORT {
 	"""
 	qiime tools import \
 		--type 'SampleData[PairedEndSequencesWithQuality]' \
-		--input-path ${reads_directory} \
+		--input-path ${MANIFEST_file} \
+		--input-format PairedEndFastqManifestPhred33V2 \
 		--output-path demuxed.qza
 	"""
 }
