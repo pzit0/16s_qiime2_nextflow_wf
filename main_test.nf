@@ -2,7 +2,8 @@
 
 // Include Modules
 include { P1_IMPORT } from "./P1_import.nf"
-include { P2_FILTER } from "./P2_import.nf"
+include { P2_FILTER } from "./P2_filter.nf"
+include { P3_DENOISE } from "./P3_denoise.nf"
 
 // Worflow
 workflow{
@@ -11,4 +12,9 @@ workflow{
     P2_FILTER(P1_IMPORT.out.p1_results.collect(),
 		params.p2_forward_primer, 
 		params.p2_reverse_primer)
+    P3_DENOISE(P2_FILTER.out.p2_results.collect(), 
+		params.p3_forward_left, 
+		params.p3_forward_right, 
+		params.p3_reverse_left, 
+		params.p3_reverse_right)
 }
