@@ -4,6 +4,7 @@
 include { P1_IMPORT } from "./P1_import.nf"
 include { P2_FILTER } from "./P2_filter.nf"
 include { P3_DENOISE } from "./P3_denoise.nf"
+include { P4_PHYLOTREE } from "./P4_phylotree.nf"
 
 // Worflow
 workflow{
@@ -17,4 +18,5 @@ workflow{
 		params.p3_forward_right, 
 		params.p3_reverse_left, 
 		params.p3_reverse_right)
+    P4_PHYLOTREE(P3_DENOISE.out.p3_rep_seqs.collect())
 }
