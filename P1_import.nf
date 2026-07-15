@@ -4,7 +4,7 @@ process P1_IMPORT {
     publishDir "${launchDir}/results", mode: "copy"
 
 	input:
-	path reads_directory
+	path MANIFEST
 
 	output:
 	path "demuxed.qza", emit: p1_results
@@ -13,7 +13,7 @@ process P1_IMPORT {
 	"""
 	qiime tools import \
 		--type 'SampleData[PairedEndSequencesWithQuality]' \
-		--input-path ${MANIFEST_file} \
+		--input-path ${MANIFEST} \
 		--input-format PairedEndFastqManifestPhred33V2 \
 		--output-path demuxed.qza
 	"""

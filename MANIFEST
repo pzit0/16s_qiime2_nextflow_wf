@@ -1,4 +1,4 @@
-sampleid	forward_absolute_filepath	reverse_absolute_filepath
+sampleid	forward-absolute-filepath	reverse-absolute-filepath
 20130417_LisleVerte_water	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_LisleVerte_water_4_L001_R1_001.fastq.gz	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_LisleVerte_water_4_L001_R2_001.fastq.gz
 20130417_LisleVerte_copepod	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_LisleVerte_copepod_6_L001_R1_001.fastq.gz	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_LisleVerte_copepod_6_L001_R2_001.fastq.gz
 20130417_Racine_water1	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_Racine_water1_5_L001_R1_001.fastq.gz	/Users/pzito/Desktop/nextflow_toy_data/16s_reads/20130417_Racine_water1_5_L001_R2_001.fastq.gz

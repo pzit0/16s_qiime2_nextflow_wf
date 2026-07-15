@@ -17,8 +17,8 @@ workflow{
     classifiers_ch = Channel.fromList(params.p6_classifiers)
     contrast_ch = Channel.fromList(params.contrast)
 
-    P0_MANIFEST()
-    P1_IMPORT(P0_Manifest.out.manifest.collect())
+    P0_MANIFEST(metadata_ch, params.read_data_directory)
+    P1_IMPORT(P0_MANIFEST.out.manifest.collect())
     P2_FILTER(P1_IMPORT.out.p1_results.collect(),
 		params.p2_forward_primer, 
 		params.p2_reverse_primer)

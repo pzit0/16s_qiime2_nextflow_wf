@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Goal: Make MANIFEST file for paired 16s sequencing qiime analysis
 Author: Patricia Zito 
@@ -76,14 +78,14 @@ def make_manifest(sampleid, path):
                     print("REVERSE PATH: ", reverse_absolute_filepath)
         if forward_absolute_filepath and reverse_absolute_filepath:
             sample_row = {"sampleid": id, 
-                        "forward_absolute_filepath": forward_absolute_filepath, 
-                        "reverse_absolute_filepath": reverse_absolute_filepath}
+                        "forward-absolute-filepath": forward_absolute_filepath, 
+                        "reverse-absolute-filepath": reverse_absolute_filepath}
             manifest_list.append(sample_row)
         else: 
             print("\n")
             print("ERROR")
             print("sample", id, "paired .fastq files were not found inside", os.path.abspath(path))
-            print("sample", id, "was not included in the final metadata file")
+            print("sample", id, "was not included in the final MANIFEST file")
     
     manifest_df = pd.DataFrame(manifest_list)
     return(manifest_df)    

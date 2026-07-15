@@ -1,17 +1,19 @@
 #!/usr/bin/env nextflow
 
 process P0_MANIFEST{
-    publishDir "${launchDir}/data", mode: "copy"
+    publishDir "${launchDir}/results", mode: "copy"
+    
+    label: "make_manifest"
 
     input:
-    metadata
-    data_dir
+    path metadata
+    path data_dir
 
     output:
-    path MANIFEST
+    path "MANIFEST", emit manifest
 
     script:
-    '''
-    make_manifest.py -m ${metadata} -s ${data_dir}
-    '''
+    """
+    ${projectDir}/make_manifest.py -m ${metadata} -s ${data_dir} -o scripts/MANIFEST
+    """
 }
