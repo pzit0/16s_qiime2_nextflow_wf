@@ -57,7 +57,7 @@ def make_manifest(sampleid, path):
     Inputs: 
         sampleid (list of strings). This comes from the first column of the original metadata file.
         path (string). Indicates the path to sequence files. 
-    Outputs: 
+    Output: manifest_df (pandas dataframe) 
     '''
     manifest_list = []
     fastq_files = get_files_in_directory(path=path, file_type= ".fastq")
@@ -104,14 +104,14 @@ parser.add_argument("-m", "-metadata",
 parser.add_argument("-c", "-column_name",
                     type = str,
                     default = "sampleid",
-                    help = "Column name for sample ids in metadata file. " \
+                    help = "column name for sample ids in metadata file. " \
                     "Default: 'sampleid'.")
 
 # sequences filepath 
-parser.add_argument("-s", "-seq_dir_path",
+parser.add_argument("-s", "-seqs_path",
                     type = str,
                     default = ".",
-                    help = "path to the directory containing all .fastq sequence files (string). " \
+                    help = "path to the directory containing all paired .fastq sequence files (string). " \
                     ".fasta files are not supported. Default: current directory.")
 
 # output filepath 
