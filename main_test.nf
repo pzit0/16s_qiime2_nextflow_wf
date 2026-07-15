@@ -7,12 +7,15 @@ include { P3_DENOISE } from "./P3_denoise.nf"
 include { P4_PHYLOTREE } from "./P4_phylotree.nf"
 include { P5_RAREFACTION } from "./P5_rarefaction.nf" 
 include { P6_TAXONOMY } from "./P6_taxonomy.nf"
+include { P7_DIVERSITY } from "./P7_diversity.nf"
+include { P8_ANCOMBC } from "./P8_ancombc.nf"
 
 // Worflow
 workflow{
     manifest_ch = Channel.fromPath(params.manifest, type: "dir")
     metadata_ch = Channel.fromPath(params.metadata)
     classifiers_ch = Channel.fromList(params.p6_classifiers)
+    contrast_ch = Channel.fromList(params.contrast)
 
     P1_IMPORT(manifest_ch)
     P2_FILTER(P1_IMPORT.out.p1_results.collect(),
@@ -35,4 +38,15 @@ workflow{
         P3_DENOISE.out.p3_denoised_table,
         metadata_ch,
         params.p6_tax_level_collapse)
+    P7_DIVERSITY(P4_PHYLOTREE.out.p4_rooted_tree.collect(),
+      P3_DENOISE.out.p3_denoised_table,
+      params.p7_sampling_depth,
+      metadata_ch,
+      contrast_ch)
+    P8_ANCOMBC(P3_DENOISE.out.p3_denoised_table,
+      metadata_ch,
+      contrast_ch,
+      params.p8_significance_threshold,
+      P6_TAXONOMY.out.p6_taxonomy_tables,
+      params.p6_tax_level_collapse)
 }

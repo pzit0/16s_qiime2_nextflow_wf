@@ -36,3 +36,12 @@
 2026-06-05 17:08:57	-	ridiculous_edison	-	d458dcf0150ac205c1df79a496075a91	9163ca9b-e88c-423c-8bc5-b09aac343dff	nextflow run main_test.nf -profile local
 2026-06-05 17:11:43	1m 42s	compassionate_church	ERR	76b8225bfadea83644180845269ea047	caf484af-d4ae-48ab-aff9-cf48358a837e	nextflow run main_test.nf -profile local
 2026-06-05 17:13:48	57.2s	zen_mclean	ERR	76b8225bfadea83644180845269ea047	d1ad9ca4-2b9e-457e-b78b-365a7dbfecd9	nextflow run main_test.nf -profile local -with-report report-config-p1.html
+2026-07-13 16:50:06	-	astonishing_morse	-	51f05051bcc78bbf95e9afae63493a20	d70c6cba-1330-457b-947f-0668beb254c9	nextflow run quick_test.nf
+2026-07-13 16:50:25	-	disturbed_poincare	-	51f05051bcc78bbf95e9afae63493a20	653f7b41-8a9b-4ca1-ab39-fa1f9dc5b26f	nextflow run quick_test.nf
+2026-07-13 16:50:50	-	serene_coulomb	-	9144bdf243ab5e821b4f6ea7c5440da6	89bdbbd8-cf2c-4226-877b-bd580b72ca10	nextflow run quick_test.nf
+2026-07-13 16:51:32	-	elegant_sinoussi	-	c835fcbda0cfc9ff84a9130f9bd366e8	eead2b70-7a5c-413b-bd58-ce2714c9804f	nextflow run quick_test.nf
+2026-07-13 16:54:39	-	pedantic_lamarck	-	9350e8f96b63e07fb023f07947c66dc0	a8ec59c9-e514-4d23-8dc4-56089fde7444	nextflow run quick_test.nf
+2026-07-13 16:55:11	3s	fabulous_booth	OK	7cc582cd1a9d57983d2af42d260e3b2d	231f4618-ae09-4a01-8fc6-eb3c89ed4d81	nextflow run quick_test.nf
+2026-07-13 16:57:17	-	ridiculous_dalembert	-	59c7a3c853cbc56ed3e082465e6e66e8	cea8a8ec-57f5-4274-a86b-49d5a6dd7169	nextflow run quick_test.nf
+2026-07-13 16:58:28	-	cranky_lichterman	-	1368bbb0bc051ce1a79e8a0d2b736544	d8c9b967-fed7-4b02-b5d6-125332f29d79	nextflow run quick_test.nf -process.debug
+2026-07-13 16:58:48	2.3s	determined_monod	OK	7a847ea8ae86737a208858f0dc87c1d7	614effe1-116b-46c2-8638-24ded1765836	nextflow run quick_test.nf -process.debug

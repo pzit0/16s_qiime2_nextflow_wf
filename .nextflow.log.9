@@ -1,81 +1,110 @@
-Jun-01 14:34:04.687 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
-Jun-01 14:34:04.954 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
-Jun-01 14:34:05.013 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
-Jun-01 14:34:05.055 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-01 14:34:05.055 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-01 14:34:05.063 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jun-01 14:34:05.090 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jun-01 14:34:05.345 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jun-01 14:34:05.364 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-01 14:34:05.433 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jun-01 14:34:05.533 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-01 14:34:05.533 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-01 14:34:05.566 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
-Jun-01 14:34:05.590 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@32f0c7f8] - activable => nextflow.secret.LocalSecretsProvider@32f0c7f8
-Jun-01 14:34:05.727 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [shrivelled_bohr] - revision: ec72b3a243
-Jun-01 14:34:06.076 [main] DEBUG nextflow.Session - Session UUID: 21b76001-01f9-47d5-9ab9-813f639dccd4
-Jun-01 14:34:06.077 [main] DEBUG nextflow.Session - Run name: shrivelled_bohr
-Jun-01 14:34:06.079 [main] DEBUG nextflow.Session - Executor pool size: 12
-Jun-01 14:34:06.093 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-01 14:34:06.100 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-01 14:34:06.307 [main] DEBUG nextflow.cli.CmdRun - 
+Jun-05 17:13:45.716 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_test.nf -profile local -with-report report-config-p1.html
+Jun-05 17:13:46.018 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Jun-05 17:13:46.090 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jun-05 17:13:46.139 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-05 17:13:46.139 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-05 17:13:46.144 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-05 17:13:46.174 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-05 17:13:46.453 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-05 17:13:46.475 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-05 17:13:46.574 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jun-05 17:13:46.582 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jun-05 17:13:46.595 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-05 17:13:46.667 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
+Jun-05 17:13:47.827 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [local]
+Jun-05 17:13:47.926 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-05 17:13:47.927 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-05 17:13:47.947 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
+Jun-05 17:13:47.952 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2d64c100] - activable => nextflow.secret.LocalSecretsProvider@2d64c100
+Jun-05 17:13:47.964 [main] DEBUG nextflow.cli.CmdRun - Launching `main_test.nf` [zen_mclean] - revision: 76b8225bfa
+Jun-05 17:13:48.098 [main] DEBUG nextflow.Session - Session UUID: d1ad9ca4-2b9e-457e-b78b-365a7dbfecd9
+Jun-05 17:13:48.099 [main] DEBUG nextflow.Session - Run name: zen_mclean
+Jun-05 17:13:48.099 [main] DEBUG nextflow.Session - Executor pool size: 12
+Jun-05 17:13:48.111 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-05 17:13:48.125 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-05 17:13:48.166 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.3 build 12259
   Created: 28-05-2026 08:48 UTC (03:48 CDT)
   System: Mac OS X 13.7.7
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2+7
   Encoding: UTF-8 (UTF-8)
-  Process: 63715@IBIO-DRW7N0JQY0.local [172.16.5.227]
-  CPUs: 12 - Mem: 16 GB (37.6 MB) - Swap: 18 GB (765.9 MB)
-Jun-01 14:34:06.351 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
-Jun-01 14:34:06.352 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
-Jun-01 14:34:06.362 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-01 14:34:06.382 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jun-01 14:34:06.385 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Jun-01 14:34:06.455 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-01 14:34:06.473 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Jun-01 14:34:06.534 [main] DEBUG nextflow.Session - Session start
-Jun-01 14:34:06.553 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Jun-01 14:34:07.349 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-01 14:34:07.814 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-01 14:34:07.815 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-01 14:34:07.840 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-01 14:34:07.863 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Jun-01 14:34:07.865 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-01 14:34:07.922 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
-Jun-01 14:34:07.973 [main] DEBUG nextflow.Session - Process names: FASTQC
-Jun-01 14:34:07.977 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Jun-01 14:34:07.986 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/pzito/Desktop/nextflow-test/16s_reads/; pattern: *_R{1,2}_001.fastq.gz; options: [:]
-Jun-01 14:34:07.991 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
-Jun-01 14:34:07.992 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Main: /Users/pzito/Desktop/nextflow-test/fastqc.nf
-Jun-01 14:34:07.992 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jun-01 14:34:07.994 [main] DEBUG nextflow.Session - Session await
-Jun-01 14:34:08.352 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.354 [Task submitter] INFO  nextflow.Session - [6b/2fa7f1] Submitted process > FASTQC (tagging directive [20130417_Racine_water2_2_L001_R1_001.fastq.gz, 20130417_Racine_water2_2_L001_R2_001.fastq.gz])
-Jun-01 14:34:08.375 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.377 [Task submitter] INFO  nextflow.Session - [f9/f014d6] Submitted process > FASTQC (tagging directive [20130417_Racine_water3_3_L001_R1_001.fastq.gz, 20130417_Racine_water3_3_L001_R2_001.fastq.gz])
-Jun-01 14:34:08.407 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.408 [Task submitter] INFO  nextflow.Session - [66/efea6b] Submitted process > FASTQC (tagging directive [20130417_LisleVerte_copepod_6_L001_R1_001.fastq.gz, 20130417_LisleVerte_copepod_6_L001_R2_001.fastq.gz])
-Jun-01 14:34:08.433 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.433 [Task submitter] INFO  nextflow.Session - [bc/d94753] Submitted process > FASTQC (tagging directive [20130417_Racine_water1_5_L001_R1_001.fastq.gz, 20130417_Racine_water1_5_L001_R2_001.fastq.gz])
-Jun-01 14:34:08.449 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.450 [Task submitter] INFO  nextflow.Session - [5c/798a19] Submitted process > FASTQC (tagging directive [20130417_Racine_water4_1_L001_R1_001.fastq.gz, 20130417_Racine_water4_1_L001_R2_001.fastq.gz])
-Jun-01 14:34:08.461 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jun-01 14:34:08.462 [Task submitter] INFO  nextflow.Session - [29/a8e01e] Submitted process > FASTQC (tagging directive [20130417_LisleVerte_water_4_L001_R1_001.fastq.gz, 20130417_LisleVerte_water_4_L001_R2_001.fastq.gz])
-Jun-01 14:34:17.580 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (tagging directive [20130417_LisleVerte_copepod_6_L001_R1_001.fastq.gz, 20130417_LisleVerte_copepod_6_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/66/efea6bf50a5aef6a061008f2a98f18]
-Jun-01 14:34:17.609 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-01 14:34:17.664 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC (tagging directive [20130417_LisleVerte_water_4_L001_R1_001.fastq.gz, 20130417_LisleVerte_water_4_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/29/a8e01ed83fb78f5b4f2e86afe91c8d]
-Jun-01 14:34:17.757 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC (tagging directive [20130417_Racine_water2_2_L001_R1_001.fastq.gz, 20130417_Racine_water2_2_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/6b/2fa7f192782c25d80bc4df4ac13d46]
-Jun-01 14:34:18.034 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-01 14:34:21.779 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC (tagging directive [20130417_Racine_water1_5_L001_R1_001.fastq.gz, 20130417_Racine_water1_5_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/bc/d94753667a80717cf5cb8d786e4f63]
-Jun-01 14:34:22.813 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (tagging directive [20130417_Racine_water3_3_L001_R1_001.fastq.gz, 20130417_Racine_water3_3_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/f9/f014d6e4011390f5a54473fabef9b3]
-Jun-01 14:34:22.814 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FASTQC (tagging directive [20130417_Racine_water4_1_L001_R1_001.fastq.gz, 20130417_Racine_water4_1_L001_R2_001.fastq.gz]); status: COMPLETED; exit: 0; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/5c/798a19742beae99aed1efbb3794609]
-Jun-01 14:34:22.854 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jun-01 14:34:22.920 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-01 14:34:22.920 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jun-01 14:34:22.934 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Jun-01 14:34:22.936 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Jun-01 14:34:22.952 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 19s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=12; peakMemory=0; ]
-Jun-01 14:34:23.225 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jun-01 14:34:23.268 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jun-01 14:34:23.269 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 75899@IBIO-DRW7N0JQY0.local [127.0.0.1]
+  CPUs: 12 - Mem: 16 GB (11.8 MB) - Swap: 13 GB (1.1 GB)
+Jun-05 17:13:48.203 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
+Jun-05 17:13:48.204 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
+Jun-05 17:13:48.225 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-05 17:13:48.238 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-05 17:13:48.240 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-05 17:13:48.305 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-05 17:13:48.319 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Jun-05 17:13:48.374 [main] DEBUG nextflow.Session - Session start
+Jun-05 17:13:48.387 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-05 17:13:48.805 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-05 17:13:49.216 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-05 17:13:49.217 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-05 17:13:49.236 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-05 17:13:49.249 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Jun-05 17:13:49.251 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-05 17:13:49.293 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P1_IMPORT': maxForks=0; fair=false; array=0
+Jun-05 17:13:49.343 [main] DEBUG nextflow.Session - Process names: P1_IMPORT
+Jun-05 17:13:49.346 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jun-05 17:13:49.357 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P1_IMPORT
+Jun-05 17:13:49.359 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_ae20b63278c25d60: /Users/pzito/Desktop/nextflow-test/16s_modules/P1_import.nf
+  Main: /Users/pzito/Desktop/nextflow-test/main_test.nf
+Jun-05 17:13:49.362 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-05 17:13:49.363 [main] DEBUG nextflow.Session - Session await
+Jun-05 17:13:49.937 [Actor Thread 3] DEBUG nextflow.conda.CondaCache - Failed to check for @EXPLICIT marker in file: /Users/pzito/anaconda3/envs/qiime2-metagenome-2024.10 - Is a directory
+Jun-05 17:13:49.951 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/Users/pzito/anaconda3/envs/qiime2-metagenome-2024.10; path=/Users/pzito/anaconda3/envs/qiime2-metagenome-2024.10
+Jun-05 17:13:50.105 [Task submitter] WARN  n.executor.BashWrapperBuilder - Task runtime metrics are not reported when using macOS without a container engine
+Jun-05 17:13:50.136 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 17:13:50.139 [Task submitter] INFO  nextflow.Session - [e2/d15ba8] Submitted process > P1_IMPORT (1)
+Jun-05 17:14:42.776 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Jun-05 17:14:42.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: P1_IMPORT (1); status: COMPLETED; exit: 130; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/e2/d15ba8b6e9a2d7a10eaea88ca6138e]
+Jun-05 17:14:42.819 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-05 17:14:42.829 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-05 17:14:42.872 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=P1_IMPORT (1); work-dir=/Users/pzito/Desktop/nextflow-test/work/e2/d15ba8b6e9a2d7a10eaea88ca6138e
+  error [nextflow.exception.ProcessFailedException]: Process `P1_IMPORT (1)` terminated with an error exit status (130)
+Jun-05 17:14:42.899 [SIGINT handler] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=1; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-05 17:14:42.909 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-05 17:14:42.910 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-05 17:14:42.931 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=52.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-05 17:14:43.020 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jun-05 17:14:43.020 [SIGINT handler] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jun-05 17:14:45.136 [SIGINT handler] WARN  nextflow.trace.ReportObserver - Failed to render execution report -- see the log file for details
+nextflow.exception.AbortOperationException: Report file already exists: report-config-p1.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+	at nextflow.trace.TraceHelper.newFileWriter(TraceHelper.groovy:66)
+	at nextflow.trace.ReportObserver.renderHtml(ReportObserver.groovy:243)
+	at nextflow.trace.ReportObserver.onFlowComplete(ReportObserver.groovy:129)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session$_registerSignalHandlers_closure10.doCall(Session.groovy:529)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:52)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:113)
+	at jdk.proxy1/jdk.proxy1.$Proxy29.handle(Unknown Source)
+	at jdk.unsupported/sun.misc.Signal$InternalMiscHandler.handle(Signal.java:198)
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.FileAlreadyExistsException: report-config-p1.html
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:228)
+	at java.base/java.nio.file.Files.newBufferedWriter(Files.java:3012)
+	at nextflow.trace.TraceHelper.newFileWriter(TraceHelper.groovy:63)
+	... 21 common frames omitted
+Jun-05 17:14:45.183 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-05 17:14:45.247 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

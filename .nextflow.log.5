@@ -1,57 +1,67 @@
-Jun-05 17:01:43.977 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_test.nf -profile local
-Jun-05 17:01:44.311 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
-Jun-05 17:01:44.378 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
-Jun-05 17:01:44.424 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-05 17:01:44.424 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-05 17:01:44.432 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jun-05 17:01:44.463 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jun-05 17:01:44.736 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jun-05 17:01:44.757 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-05 17:01:44.843 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jun-05 17:01:44.852 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jun-05 17:01:44.871 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jun-05 17:01:44.949 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
-Jun-05 17:01:45.466 [main] ERROR nextflow.cli.Launcher - Config parsing failed
-nextflow.exception.ConfigParseException: Config parsing failed
-	at nextflow.config.parser.v2.ConfigParserV2.parse(ConfigParserV2.groovy:162)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.parser.v2.ConfigParserV2.parse(ConfigParserV2.groovy:192)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.parse0(ConfigBuilder.groovy:456)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.merge0(ConfigBuilder.groovy:441)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.buildConfig0(ConfigBuilder.groovy:397)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.buildGivenFiles(ConfigBuilder.groovy:336)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.buildConfigObject(ConfigBuilder.groovy:808)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.config.ConfigBuilder.build(ConfigBuilder.groovy:821)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+Jul-13 16:51:29.905 [main] DEBUG nextflow.cli.Launcher - $> nextflow run quick_test.nf
+Jul-13 16:51:30.186 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Jul-13 16:51:30.250 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jul-13 16:51:30.292 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-13 16:51:30.293 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-13 16:51:30.300 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jul-13 16:51:30.324 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jul-13 16:51:30.562 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jul-13 16:51:30.586 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-13 16:51:30.659 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-13 16:51:30.663 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-13 16:51:30.679 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jul-13 16:51:30.731 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-13 16:51:31.819 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-13 16:51:31.821 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-13 16:51:31.843 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
+Jul-13 16:51:31.847 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4190bc8a] - activable => nextflow.secret.LocalSecretsProvider@4190bc8a
+Jul-13 16:51:31.859 [main] DEBUG nextflow.cli.CmdRun - Launching `quick_test.nf` [elegant_sinoussi] - revision: c835fcbda0
+Jul-13 16:51:31.973 [main] DEBUG nextflow.Session - Session UUID: eead2b70-7a5c-413b-bd58-ce2714c9804f
+Jul-13 16:51:31.974 [main] DEBUG nextflow.Session - Run name: elegant_sinoussi
+Jul-13 16:51:31.974 [main] DEBUG nextflow.Session - Executor pool size: 12
+Jul-13 16:51:31.989 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-13 16:51:32.000 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-13 16:51:32.039 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.3 build 12259
+  Created: 28-05-2026 08:48 UTC (03:48 CDT)
+  System: Mac OS X 13.7.7
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 97334@IBIO-DRW7N0JQY0.local [192.168.1.82]
+  CPUs: 12 - Mem: 16 GB (13.9 MB) - Swap: 4 GB (861.2 MB)
+Jul-13 16:51:32.071 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
+Jul-13 16:51:32.072 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
+Jul-13 16:51:32.093 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-13 16:51:32.109 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-13 16:51:32.113 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jul-13 16:51:32.181 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-13 16:51:32.199 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Jul-13 16:51:32.265 [main] DEBUG nextflow.Session - Session start
+Jul-13 16:51:32.279 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jul-13 16:51:32.509 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Jul-13 16:51:32.531 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-13 16:51:32.709 [main] ERROR nextflow.cli.Launcher - Script compilation failed
+nextflow.exception.ScriptCompilationException: Script compilation failed
+	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:129)
+	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy:81)
+	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy)
+	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:215)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:442)
 	at nextflow.cli.Launcher.run(Launcher.groovy:526)
 	at nextflow.cli.Launcher.main(Launcher.groovy:686)
 Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-_nf_config_5333beebf9b56745: 3: Number ending with underscores is invalid @ line 3, column 5 @ line 3, column 5.
-   	.05_steps = 10
+Main: 12: `echo` is not defined @ line 12, column 5.
+       echo "${greeting}"
        ^
 
 1 error
 
 	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
-	at nextflow.config.parser.ConfigAstBuilder.collectSyntaxError(ConfigAstBuilder.java:1407)
-	at nextflow.config.parser.ConfigAstBuilder.createParsingFailedException(ConfigAstBuilder.java:1390)
-	at nextflow.config.parser.ConfigAstBuilder.convertException(ConfigAstBuilder.java:172)
-	at nextflow.config.parser.ConfigAstBuilder.buildCST(ConfigAstBuilder.java:152)
-	at nextflow.config.parser.ConfigAstBuilder.buildAST(ConfigAstBuilder.java:177)
-	at nextflow.config.parser.ConfigParserPlugin.buildAST(ConfigParserPlugin.java:51)
-	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:807)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:631)
-	at nextflow.config.parser.v2.ConfigCompiler.compile0(ConfigCompiler.java:112)
-	at nextflow.config.parser.v2.ConfigCompiler.compile(ConfigCompiler.java:97)
-	at nextflow.config.parser.v2.ConfigParserV2.parse(ConfigParserV2.groovy:141)
-	... 17 common frames omitted
+	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:878)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:660)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:634)
+	at nextflow.script.parser.v2.ScriptCompiler.compile0(ScriptCompiler.java:146)
+	at nextflow.script.parser.v2.ScriptCompiler.compile(ScriptCompiler.java:112)
+	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:114)
+	... 7 common frames omitted

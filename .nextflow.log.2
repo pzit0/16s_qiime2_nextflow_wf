@@ -1,76 +1,78 @@
-Jun-05 17:08:54.554 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_test.nf -profile local
-Jun-05 17:08:54.899 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
-Jun-05 17:08:54.966 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
-Jun-05 17:08:55.012 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-05 17:08:55.013 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-05 17:08:55.021 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jun-05 17:08:55.050 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jun-05 17:08:55.306 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jun-05 17:08:55.330 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-05 17:08:55.411 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jun-05 17:08:55.414 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jun-05 17:08:55.427 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jun-05 17:08:55.498 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
-Jun-05 17:08:56.652 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [local]
-Jun-05 17:08:56.755 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-05 17:08:56.756 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-05 17:08:56.777 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
-Jun-05 17:08:56.782 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2e73d5eb] - activable => nextflow.secret.LocalSecretsProvider@2e73d5eb
-Jun-05 17:08:56.798 [main] DEBUG nextflow.cli.CmdRun - Launching `main_test.nf` [ridiculous_edison] - revision: d458dcf015
-Jun-05 17:08:56.943 [main] DEBUG nextflow.Session - Session UUID: 9163ca9b-e88c-423c-8bc5-b09aac343dff
-Jun-05 17:08:56.944 [main] DEBUG nextflow.Session - Run name: ridiculous_edison
-Jun-05 17:08:56.946 [main] DEBUG nextflow.Session - Executor pool size: 12
-Jun-05 17:08:56.961 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-05 17:08:56.974 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jun-05 17:08:57.021 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-13 16:57:14.625 [main] DEBUG nextflow.cli.Launcher - $> nextflow run quick_test.nf
+Jul-13 16:57:14.933 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Jul-13 16:57:14.999 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jul-13 16:57:15.043 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-13 16:57:15.044 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-13 16:57:15.051 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jul-13 16:57:15.076 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jul-13 16:57:15.317 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jul-13 16:57:15.335 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-13 16:57:15.401 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-13 16:57:15.404 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-13 16:57:15.420 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jul-13 16:57:15.477 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-13 16:57:16.549 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-13 16:57:16.551 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-13 16:57:16.574 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
+Jul-13 16:57:16.579 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4190bc8a] - activable => nextflow.secret.LocalSecretsProvider@4190bc8a
+Jul-13 16:57:16.591 [main] DEBUG nextflow.cli.CmdRun - Launching `quick_test.nf` [ridiculous_dalembert] - revision: 59c7a3c853
+Jul-13 16:57:16.715 [main] DEBUG nextflow.Session - Session UUID: cea8a8ec-57f5-4274-a86b-49d5a6dd7169
+Jul-13 16:57:16.716 [main] DEBUG nextflow.Session - Run name: ridiculous_dalembert
+Jul-13 16:57:16.717 [main] DEBUG nextflow.Session - Executor pool size: 12
+Jul-13 16:57:16.734 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-13 16:57:16.748 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-13 16:57:16.993 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.3 build 12259
   Created: 28-05-2026 08:48 UTC (03:48 CDT)
   System: Mac OS X 13.7.7
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2+7
   Encoding: UTF-8 (UTF-8)
-  Process: 73365@IBIO-DRW7N0JQY0.local [10.138.142.41]
-  CPUs: 12 - Mem: 16 GB (17.8 MB) - Swap: 12 GB (783 MB)
-Jun-05 17:08:57.053 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
-Jun-05 17:08:57.054 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
-Jun-05 17:08:57.077 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-05 17:08:57.090 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jun-05 17:08:57.091 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Jun-05 17:08:57.161 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-05 17:08:57.177 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Jun-05 17:08:57.233 [main] DEBUG nextflow.Session - Session start
-Jun-05 17:08:57.246 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Jun-05 17:08:57.475 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-Jun-05 17:08:57.500 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Jun-05 17:08:57.675 [main] ERROR nextflow.cli.Launcher - Script compilation failed
-nextflow.exception.ScriptCompilationException: Script compilation failed
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:129)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy:81)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy)
-	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:215)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
+  Process: 99689@IBIO-DRW7N0JQY0.local [192.168.1.82]
+  CPUs: 12 - Mem: 16 GB (22.3 MB) - Swap: 4 GB (869.2 MB)
+Jul-13 16:57:17.037 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
+Jul-13 16:57:17.037 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
+Jul-13 16:57:17.049 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-13 16:57:17.070 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-13 16:57:17.072 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jul-13 16:57:17.148 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-13 16:57:17.167 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Jul-13 16:57:17.228 [main] DEBUG nextflow.Session - Session start
+Jul-13 16:57:17.241 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jul-13 16:57:17.561 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-13 16:57:17.898 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-13 16:57:17.898 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-13 16:57:17.916 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-13 16:57:17.924 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Jul-13 16:57:17.926 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-13 16:57:17.969 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'testing': maxForks=0; fair=false; array=0
+Jul-13 16:57:17.995 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [0]
+Jul-13 16:57:18.041 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /Users/pzito/Desktop/nextflow-test/quick_test.nf
+Jul-13 16:57:18.041 [main] DEBUG nextflow.Session - Session aborted -- Cause: Access to 'testing.out' is undefined since the process 'testing' doesn't declare any output
+Jul-13 16:57:18.073 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-13 16:57:18.140 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-13 16:57:18.382 [main] ERROR nextflow.cli.Launcher - Access to 'testing.out' is undefined since the process 'testing' doesn't declare any output
+nextflow.exception.ScriptRuntimeException: Access to 'testing.out' is undefined since the process 'testing' doesn't declare any output
+	at nextflow.script.ProcessDef.getOut(ProcessDef.groovy:128)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Main$_runScript_closure2$_closure4.doCall(Main:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:187)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:271)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:282)
+	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy:99)
+	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:229)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:128)
 	at nextflow.cli.CmdRun.run(CmdRun.groovy:442)
 	at nextflow.cli.Launcher.run(Launcher.groovy:526)
 	at nextflow.cli.Launcher.main(Launcher.groovy:686)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-_nf_script_74fd1b948d02b42d: 10: Number ending with underscores is invalid @ line 10, column 30 @ line 10, column 30.
-   	path "demuxed.qza", emit: 01_results
-                                ^
-
-Main: 4: Module could not be parsed: '/Users/pzito/Desktop/nextflow-test/16s_modules/01_import.nf' @ line 4, column 1.
-   include { P1_IMPORT } from "./16s_modules/01_import.nf"
-   ^
-
-Main: 9: `P1_IMPORT` is not defined @ line 9, column 5.
-       P1_IMPORT(seqDir_ch)
-       ^
-
-3 errors
-
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
-	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:878)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:660)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:634)
-	at nextflow.script.parser.v2.ScriptCompiler.compile0(ScriptCompiler.java:146)
-	at nextflow.script.parser.v2.ScriptCompiler.compile(ScriptCompiler.java:112)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:114)
-	... 7 common frames omitted
