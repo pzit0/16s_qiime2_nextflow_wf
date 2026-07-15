@@ -1,7 +1,6 @@
 #!/usr/bin/env nextflow
 
 // Include Modules
-include { P0_MANIFEST } from "./P0_manifest"
 include { P1_IMPORT } from "./P1_import.nf"
 include { P2_FILTER } from "./P2_filter.nf"
 include { P3_DENOISE } from "./P3_denoise.nf"
@@ -13,12 +12,12 @@ include { P8_ANCOMBC } from "./P8_ancombc.nf"
 
 // Worflow
 workflow{
-    metadata_ch = Channel.fromPath(params.metadata)
+    metadata_ch = Channel.of(file(params.metadata))
+    manifest_ch = Channel.fromPath(params.manifest)
     classifiers_ch = Channel.fromList(params.p6_classifiers)
     contrast_ch = Channel.fromList(params.contrast)
 
-    P0_MANIFEST(metadata_ch, params.read_data_directory)
-    P1_IMPORT(P0_MANIFEST.out.manifest.collect())
+    P1_IMPORT(manifest_ch)
     P2_FILTER(P1_IMPORT.out.p1_results.collect(),
 		params.p2_forward_primer, 
 		params.p2_reverse_primer)
