@@ -1,5 +1,0 @@
-2026-07-15 16:36:56	3.8s	prickly_hodgkin	ERR	d7c14191a6b3741411ad2c8e6955c195	f0bd116a-a70a-43e7-bd48-3ecf5fb0536a	nextflow run main_test.nf -with-dag flowchart.png
-2026-07-15 16:40:22	4.2s	spontaneous_darwin	ERR	d7c14191a6b3741411ad2c8e6955c195	8e83adba-8b73-46ab-b4e8-28d268193133	nextflow run main_test.nf -with-dag flowchart.md
-2026-07-15 16:45:27	3s	elated_cori	OK	d7c14191a6b3741411ad2c8e6955c195	ee325239-e7ea-4a0a-8712-16a1f92b3e08	nextflow run main_test.nf -preview -with-dag flowchart.png
-2026-07-15 16:48:17	7.5s	stupefied_kilby	OK	d7c14191a6b3741411ad2c8e6955c195	931e7a40-92b9-4075-a095-e6ca6794b7e7	nextflow run main_test.nf -preview -with-dag flowchart.png
-2026-07-15 16:50:04	3.5s	naughty_lagrange	OK	d7c14191a6b3741411ad2c8e6955c195	b87c07fe-cf74-4579-bed8-9cd934f4cf4f	nextflow run main_test.nf -preview -with-dag flowchart.mmd
