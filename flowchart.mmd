@@ -1,0 +1,113 @@
+flowchart TB
+    subgraph " "
+    v0["channel.of"]
+    v1["channel.fromPath"]
+    v2["channel.fromList"]
+    v3["channel.fromList"]
+    v6["forward_primer"]
+    v7["reverse_primer"]
+    v11["forward_left"]
+    v12["forward_right"]
+    v13["reverse_left"]
+    v14["reverse_right"]
+    v28["max_depth"]
+    v29["steps"]
+    v30["metrics"]
+    v33["tax_level"]
+    v41["sampling_depth"]
+    v44["sig_threshold"]
+    v45["tax_level"]
+    end
+    v4(["P1_IMPORT"])
+    v8(["P2_FILTER"])
+    subgraph " "
+    v9[" "]
+    v16[" "]
+    v17[" "]
+    v18[" "]
+    v21[" "]
+    v22[" "]
+    v23[" "]
+    v24[" "]
+    v25[" "]
+    v32[" "]
+    v35[" "]
+    v36[" "]
+    v37[" "]
+    v38[" "]
+    v39[" "]
+    v43[" "]
+    v47[" "]
+    v48[" "]
+    v49[" "]
+    v50[" "]
+    end
+    v15(["P3_DENOISE"])
+    v20(["P4_PHYLOTREE"])
+    v31(["P5_RAREFACTION"])
+    v34(["P6_TAXONOMY"])
+    v42(["P7_DIVERSITY"])
+    v46(["P8_ANCOMBC"])
+    v5(( ))
+    v10(( ))
+    v19(( ))
+    v26(( ))
+    v27(( ))
+    v40(( ))
+    v0 --> v31
+    v0 --> v34
+    v0 --> v42
+    v0 --> v46
+    v1 --> v4
+    v2 --> v34
+    v3 --> v42
+    v3 --> v46
+    v4 --> v5
+    v6 --> v8
+    v7 --> v8
+    v5 --> v8
+    v8 --> v9
+    v8 --> v10
+    v11 --> v15
+    v12 --> v15
+    v13 --> v15
+    v14 --> v15
+    v10 --> v15
+    v15 --> v18
+    v15 --> v17
+    v15 --> v16
+    v15 --> v34
+    v15 --> v42
+    v15 --> v46
+    v15 --> v19
+    v15 --> v26
+    v19 --> v20
+    v20 --> v25
+    v20 --> v24
+    v20 --> v23
+    v20 --> v22
+    v20 --> v21
+    v20 --> v27
+    v20 --> v40
+    v28 --> v31
+    v29 --> v31
+    v30 --> v31
+    v26 --> v31
+    v27 --> v31
+    v31 --> v32
+    v33 --> v34
+    v34 --> v46
+    v34 --> v39
+    v34 --> v38
+    v34 --> v37
+    v34 --> v36
+    v34 --> v35
+    v41 --> v42
+    v40 --> v42
+    v42 --> v43
+    v44 --> v46
+    v45 --> v46
+    v46 --> v50
+    v46 --> v49
+    v46 --> v48
+    v46 --> v47

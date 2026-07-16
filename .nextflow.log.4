@@ -1,82 +1,166 @@
-Jul-13 16:54:36.927 [main] DEBUG nextflow.cli.Launcher - $> nextflow run quick_test.nf
-Jul-13 16:54:37.250 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
-Jul-13 16:54:37.309 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
-Jul-13 16:54:37.355 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-13 16:54:37.356 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-13 16:54:37.362 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jul-13 16:54:37.388 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jul-13 16:54:37.637 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jul-13 16:54:37.653 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-13 16:54:37.727 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jul-13 16:54:37.732 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
-Jul-13 16:54:37.749 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jul-13 16:54:37.810 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jul-13 16:54:38.891 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-13 16:54:38.892 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-13 16:54:38.917 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
-Jul-13 16:54:38.922 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@47d023b7] - activable => nextflow.secret.LocalSecretsProvider@47d023b7
-Jul-13 16:54:38.934 [main] DEBUG nextflow.cli.CmdRun - Launching `quick_test.nf` [pedantic_lamarck] - revision: 9350e8f96b
-Jul-13 16:54:39.055 [main] DEBUG nextflow.Session - Session UUID: a8ec59c9-e514-4d23-8dc4-56089fde7444
-Jul-13 16:54:39.056 [main] DEBUG nextflow.Session - Run name: pedantic_lamarck
-Jul-13 16:54:39.058 [main] DEBUG nextflow.Session - Executor pool size: 12
-Jul-13 16:54:39.071 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-13 16:54:39.086 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-13 16:54:39.328 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-15 16:36:54.480 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_test.nf -with-dag flowchart.png
+Jul-15 16:36:54.667 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Jul-15 16:36:54.763 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pzito/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jul-15 16:36:54.806 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-15 16:36:54.807 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-15 16:36:54.812 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jul-15 16:36:54.839 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jul-15 16:36:55.103 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jul-15 16:36:55.118 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-15 16:36:55.202 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-15 16:36:55.207 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/pzito/Desktop/nextflow-test/nextflow.config
+Jul-15 16:36:55.228 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jul-15 16:36:55.274 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-15 16:36:56.362 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-15 16:36:56.364 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-15 16:36:56.389 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pzito/.nextflow/secrets/store.json
+Jul-15 16:36:56.397 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@38e7ed69] - activable => nextflow.secret.LocalSecretsProvider@38e7ed69
+Jul-15 16:36:56.413 [main] DEBUG nextflow.cli.CmdRun - Launching `main_test.nf` [prickly_hodgkin] - revision: d7c14191a6
+Jul-15 16:36:56.538 [main] DEBUG nextflow.Session - Session UUID: f0bd116a-a70a-43e7-bd48-3ecf5fb0536a
+Jul-15 16:36:56.539 [main] DEBUG nextflow.Session - Run name: prickly_hodgkin
+Jul-15 16:36:56.541 [main] DEBUG nextflow.Session - Executor pool size: 12
+Jul-15 16:36:56.557 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-15 16:36:56.567 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-15 16:36:56.845 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.3 build 12259
   Created: 28-05-2026 08:48 UTC (03:48 CDT)
   System: Mac OS X 13.7.7
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2+7
   Encoding: UTF-8 (UTF-8)
-  Process: 98555@IBIO-DRW7N0JQY0.local [192.168.1.82]
-  CPUs: 12 - Mem: 16 GB (17 MB) - Swap: 4 GB (861.2 MB)
-Jul-13 16:54:39.371 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
-Jul-13 16:54:39.371 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
-Jul-13 16:54:39.383 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-13 16:54:39.397 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-13 16:54:39.400 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Jul-13 16:54:39.489 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-13 16:54:39.508 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Jul-13 16:54:39.572 [main] DEBUG nextflow.Session - Session start
-Jul-13 16:54:39.585 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Jul-13 16:54:39.915 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-13 16:54:40.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-13 16:54:40.255 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-13 16:54:40.272 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-13 16:54:40.280 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Jul-13 16:54:40.282 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-13 16:54:40.330 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'testing': maxForks=0; fair=false; array=0
-Jul-13 16:54:40.354 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [0]
-Jul-13 16:54:40.418 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Main: /Users/pzito/Desktop/nextflow-test/quick_test.nf
-Jul-13 16:54:40.418 [main] DEBUG nextflow.Session - Session aborted -- Cause: Operator 'view' cannot be applied to an undefined output
-Jul-13 16:54:40.456 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Jul-13 16:54:40.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-13 16:54:40.758 [main] ERROR nextflow.cli.Launcher - Operator 'view' cannot be applied to an undefined output
-nextflow.exception.ScriptRuntimeException: Operator 'view' cannot be applied to an undefined output
-	at nextflow.extension.OpCall.setSource(OpCall.groovy:89)
-	at nextflow.extension.OpCall.setSource(OpCall.groovy:106)
-	at nextflow.extension.OpCall.<init>(OpCall.groovy:71)
-	at nextflow.plugin.extension.PluginExtensionProvider.invokeExtensionMethod(PluginExtensionProvider.groovy:279)
-	at groovy.runtime.metaclass.NextflowDelegatingMetaClass.invokeMethod(NextflowDelegatingMetaClass.java:58)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Main$_runScript_closure2$_closure4.doCall(Main:21)
+  Process: 88618@IBIO-DRW7N0JQY0.local [192.168.1.82]
+  CPUs: 12 - Mem: 16 GB (13.2 MB) - Swap: 9 GB (1005.3 MB)
+Jul-15 16:36:56.888 [main] DEBUG nextflow.Session - Work-dir: /Users/pzito/Desktop/nextflow-test/work [Mac OS X]
+Jul-15 16:36:56.888 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pzito/Desktop/nextflow-test/bin
+Jul-15 16:36:56.912 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-15 16:36:56.928 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-15 16:36:56.931 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jul-15 16:36:57.028 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-15 16:36:57.041 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Jul-15 16:36:57.098 [main] DEBUG nextflow.Session - Session start
+Jul-15 16:36:57.116 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jul-15 16:36:58.091 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-15 16:36:58.401 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:58.401 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:58.632 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-15 16:36:58.729 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Jul-15 16:36:58.738 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-15 16:36:58.846 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P1_IMPORT': maxForks=0; fair=false; array=0
+Jul-15 16:36:58.951 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:58.951 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:58.954 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P2_FILTER': maxForks=0; fair=false; array=0
+Jul-15 16:36:58.980 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:58.981 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:58.983 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P3_DENOISE': maxForks=0; fair=false; array=0
+Jul-15 16:36:58.998 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:58.998 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:58.999 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P4_PHYLOTREE': maxForks=0; fair=false; array=0
+Jul-15 16:36:59.013 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:59.013 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:59.014 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P5_RAREFACTION': maxForks=0; fair=false; array=0
+Jul-15 16:36:59.033 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:59.033 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:59.035 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P6_TAXONOMY': maxForks=0; fair=false; array=0
+Jul-15 16:36:59.062 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:59.063 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:59.064 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P7_DIVERSITY': maxForks=0; fair=false; array=0
+Jul-15 16:36:59.067 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [4]
+Jul-15 16:36:59.082 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 16:36:59.082 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 16:36:59.083 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'P8_ANCOMBC': maxForks=0; fair=false; array=0
+Jul-15 16:36:59.084 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [2]
+Jul-15 16:36:59.103 [main] DEBUG nextflow.Session - Process names: P8_ANCOMBC, P6_TAXONOMY, P1_IMPORT, P5_RAREFACTION, P3_DENOISE, P7_DIVERSITY, P2_FILTER, P4_PHYLOTREE
+Jul-15 16:36:59.108 [main] DEBUG nextflow.Session - Igniting dataflow network (14)
+Jul-15 16:36:59.161 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P1_IMPORT
+Jul-15 16:36:59.162 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P2_FILTER
+Jul-15 16:36:59.162 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P3_DENOISE
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P4_PHYLOTREE
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P5_RAREFACTION
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P6_TAXONOMY
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P7_DIVERSITY
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P7_DIVERSITY
+Jul-15 16:36:59.163 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P8_ANCOMBC
+Jul-15 16:36:59.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > P8_ANCOMBC
+Jul-15 16:36:59.166 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_73fd541d79b4599b: /Users/pzito/Desktop/nextflow-test/P3_denoise.nf
+  _nf_script_ce44719760493504: /Users/pzito/Desktop/nextflow-test/P7_diversity.nf
+  _nf_script_51d39d7689b0e1d3: /Users/pzito/Desktop/nextflow-test/P6_taxonomy.nf
+  Main: /Users/pzito/Desktop/nextflow-test/main_test.nf
+  _nf_script_10f034bb432781ce: /Users/pzito/Desktop/nextflow-test/P2_filter.nf
+  _nf_script_fab9725003112cde: /Users/pzito/Desktop/nextflow-test/P4_phylotree.nf
+  _nf_script_003e0a8d0d81898c: /Users/pzito/Desktop/nextflow-test/P8_ancombc.nf
+  _nf_script_242ed6d4ac1ff414: /Users/pzito/Desktop/nextflow-test/P1_import.nf
+  _nf_script_8066140b1dd6d41c: /Users/pzito/Desktop/nextflow-test/P5_rarefaction.nf
+Jul-15 16:36:59.167 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-15 16:36:59.167 [main] DEBUG nextflow.Session - Session await
+Jul-15 16:36:59.261 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /media/leelab/HDD_Array/PZito/16s/2013_04_17-nf/demultiplexed_seqs/MANIFEST -- Cause: java.nio.file.NoSuchFileException: /media/leelab/HDD_Array/PZito/16s/2013_04_17-nf/demultiplexed_seqs/MANIFEST
+Jul-15 16:36:59.351 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-15 16:36:59.353 [Task submitter] INFO  nextflow.Session - [dd/78d35c] Submitted process > P1_IMPORT (1)
+Jul-15 16:36:59.528 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: P1_IMPORT (1); status: COMPLETED; exit: 127; error: -; workDir: /Users/pzito/Desktop/nextflow-test/work/dd/78d35c71d2af6db359179e4098b3c1]
+Jul-15 16:36:59.529 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-15 16:36:59.542 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=P1_IMPORT (1); work-dir=/Users/pzito/Desktop/nextflow-test/work/dd/78d35c71d2af6db359179e4098b3c1
+  error [nextflow.exception.ProcessFailedException]: Process `P1_IMPORT (1)` terminated with an error exit status (127)
+Jul-15 16:36:59.557 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'P1_IMPORT (1)'
+
+Caused by:
+  Process `P1_IMPORT (1)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  qiime tools import 		--type 'SampleData[PairedEndSequencesWithQuality]' 		--input-path MANIFEST 		--input-format PairedEndFastqManifestPhred33V2 		--output-path demuxed.qza
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: qiime: command not found
+
+Work dir:
+  /Users/pzito/Desktop/nextflow-test/work/dd/78d35c71d2af6db359179e4098b3c1
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jul-15 16:36:59.569 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `P1_IMPORT (1)` terminated with an error exit status (127)
+Jul-15 16:36:59.577 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-15 16:36:59.582 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-15 16:36:59.583 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-15 16:36:59.597 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=138ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-15 16:36:59.611 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=138ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-15 16:36:59.612 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:378)
+	at java.base/java.lang.Thread.join(Thread.java:2017)
+	at java.base/java.lang.Thread.join(Thread.java:2093)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:559)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session.fault(Session.groovy:792)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1096)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:187)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:271)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:282)
-	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy:99)
-	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:229)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:128)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:442)
-	at nextflow.cli.Launcher.run(Launcher.groovy:526)
-	at nextflow.cli.Launcher.main(Launcher.groovy:686)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Jul-15 16:36:59.683 [TaskFinalizer-1] WARN  nextflow.dag.GraphvizRenderer - Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Jul-15 16:36:59.824 [main] WARN  nextflow.dag.GraphvizRenderer - Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Jul-15 16:36:59.839 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-15 16:36:59.870 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
