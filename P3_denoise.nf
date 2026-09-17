@@ -21,10 +21,10 @@ process P3_DENOISE {
 	"""
 	qiime dada2 denoise-paired \
 		--i-demultiplexed-seqs ${trimmed_artifact} \
-		--p-trunc-len-f ${forward_right} \
-		--p-trunc-len-r ${reverse_right} \
-		--p-trim-left-f ${forward_left} \
-		--p-trim-left-r ${reverse_left} \
+		--p-trunc-len-f ${truncate_length_forward} \
+		--p-trunc-len-r ${truncate_length_reverse} \
+		--p-trim-left-f ${trim_left_forward} \
+		--p-trim-left-r ${trim_left_reverse} \
 		--o-table denoised_table.qza \
 		--o-representative-sequences representative_sequences.qza \
 		--o-denoising-stats denoising_stats.qza \
