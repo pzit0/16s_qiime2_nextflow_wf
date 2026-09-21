@@ -5,10 +5,10 @@ process P3_DENOISE {
 
 	input:
 	path trimmed_artifact
-	val forward_left
-	val forward_right
-	val reverse_left
-	val reverse_right
+	val truncate_length_forward
+	val truncate_length_reverse
+	val trim_left_forward
+	val trim_left_reverse
 
 	output:
 	path "denoised_table.qza", emit: p3_denoised_table
