@@ -16,11 +16,10 @@ process P2_FILTER {
 	"""
 	qiime cutadapt trim-paired \
 		--i-demultiplexed-sequences ${demuxed_artifact} \
-		--p-adapter-f ${forward_primer} \
-		--p-adapter-r ${reverse_primer} \
+		--p-front-f ${forward_primer} \
+		--p-front-r ${reverse_primer} \
 		--p-minimum-length 1 \
-		--p-no-discard-untrimmed \
-		--p-no-indels \
+		--p-discard-untrimmed \
 		--o-trimmed-sequences trimmed.qza \
 		--verbose
 
