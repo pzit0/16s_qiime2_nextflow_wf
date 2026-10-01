@@ -19,7 +19,7 @@ process P2_FILTER {
 		--p-front-f ${forward_primer} \
 		--p-front-r ${reverse_primer} \
 		--p-minimum-length 1 \
-		--p-discard-untrimmed \
+		--p-no-discard-untrimmed \
 		--o-trimmed-sequences trimmed.qza \
 		--verbose
 

@@ -25,6 +25,7 @@ process P3_DENOISE {
 		--p-trunc-len-r ${truncate_length_reverse} \
 		--p-trim-left-f ${trim_left_forward} \
 		--p-trim-left-r ${trim_left_reverse} \
+		--p-no-retain-all-samples \
 		--o-table denoised_table.qza \
 		--o-representative-sequences representative_sequences.qza \
 		--o-denoising-stats denoising_stats.qza \
