@@ -9,6 +9,7 @@ process P3_DENOISE {
 	val truncate_length_reverse
 	val trim_left_forward
 	val trim_left_reverse
+	val mode
 
 	output:
 	path "denoised_table.qza", emit: p3_denoised_table
@@ -18,7 +19,7 @@ process P3_DENOISE {
 	path "denoising_stats.qzv"
 
 	script:
-	if(mode = "paired")
+	if(mode == "paired")
 		"""
 		qiime dada2 denoise-paired \
 			--i-demultiplexed-seqs ${trimmed_artifact} \
@@ -40,7 +41,7 @@ process P3_DENOISE {
 			--m-input-file denoising_stats.qza \
 			--o-visualization denoising_stats.qzv
 		"""
-	else if(mode = "single")
+	else if(mode == "single")
 		"""
 		qiime dada2 denoise-single \
 			--i-demultiplexed-seqs ${trimmed_artifact} \

@@ -25,7 +25,8 @@ workflow{
 		params.p3_truncate_length_forward, 
 		params.p3_truncate_length_reverse, 
 		params.p3_trim_left_forward,
-		params.p3_trim_left_reverse)
+		params.p3_trim_left_reverse,
+    params.p3_mode)
     P4_PHYLOTREE(P3_DENOISE.out.p3_rep_seqs.collect())
     P5_RAREFACTION(P3_DENOISE.out.p3_denoised_table.collect(),
         P4_PHYLOTREE.out.p4_rooted_tree.collect(),
