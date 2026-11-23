@@ -12,6 +12,7 @@ process P8_ANCOMBC{
 		path(taxonomy), 
 		path(collapsed_taxonomy)
 	val tax_level
+	val prevalence_threshold
 	
 	output:
 	path "ancombc_${database}_${contrast}.qza"
@@ -26,6 +27,7 @@ process P8_ANCOMBC{
 		--m-metadata-file ${metadata} \
 		--p-formula "${contrast}" \
 		--o-differentials ancombc_${database}_${contrast}.qza \
+		--p-prv-cut ${prevalence_threshold}\
 		--verbose
 
 	qiime composition da-barplot \

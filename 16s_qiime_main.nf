@@ -49,5 +49,6 @@ workflow{
       contrast_ch,
       params.p8_significance_threshold,
       P6_TAXONOMY.out.p6_taxonomy_tables,
-      params.p6_tax_level_collapse)
+      params.p6_tax_level_collapse
+      params.p8_prevalence_threshold)
 }
