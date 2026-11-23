@@ -18,25 +18,46 @@ process P3_DENOISE {
 	path "denoising_stats.qzv"
 
 	script:
-	"""
-	qiime dada2 denoise-paired \
-		--i-demultiplexed-seqs ${trimmed_artifact} \
-		--p-trunc-len-f ${truncate_length_forward} \
-		--p-trunc-len-r ${truncate_length_reverse} \
-		--p-trim-left-f ${trim_left_forward} \
-		--p-trim-left-r ${trim_left_reverse} \
-		--p-no-retain-all-samples \
-		--o-table denoised_table.qza \
-		--o-representative-sequences representative_sequences.qza \
-		--o-denoising-stats denoising_stats.qza \
-        --verbose
-	
-	qiime feature-table tabulate-seqs \
-		--i-data representative_sequences.qza \
-		--o-visualization representative_sequences.qzv
-	
-	qiime metadata tabulate \
-		--m-input-file denoising_stats.qza \
-		--o-visualization denoising_stats.qzv
-	"""
+	if(mode = "paired")
+		"""
+		qiime dada2 denoise-paired \
+			--i-demultiplexed-seqs ${trimmed_artifact} \
+			--p-trunc-len-f ${truncate_length_forward} \
+			--p-trunc-len-r ${truncate_length_reverse} \
+			--p-trim-left-f ${trim_left_forward} \
+			--p-trim-left-r ${trim_left_reverse} \
+			--p-no-retain-all-samples \
+			--o-table denoised_table.qza \
+			--o-representative-sequences representative_sequences.qza \
+			--o-denoising-stats denoising_stats.qza \
+			--verbose
+		
+		qiime feature-table tabulate-seqs \
+			--i-data representative_sequences.qza \
+			--o-visualization representative_sequences.qzv
+		
+		qiime metadata tabulate \
+			--m-input-file denoising_stats.qza \
+			--o-visualization denoising_stats.qzv
+		"""
+	else if(mode = "single")
+		"""
+		qiime dada2 denoise-single \
+			--i-demultiplexed-seqs ${trimmed_artifact} \
+			--p-trunc-len ${truncate_length_forward} \
+			--p-trim-left ${trim_left_forward} \
+			--p-no-retain-all-samples \
+			--o-table denoised_table.qza \
+			--o-representative-sequences representative_sequences.qza \
+			--o-denoising-stats denoising_stats.qza \
+			--verbose
+		
+		qiime feature-table tabulate-seqs \
+			--i-data representative_sequences.qza \
+			--o-visualization representative_sequences.qzv
+		
+		qiime metadata tabulate \
+			--m-input-file denoising_stats.qza \
+			--o-visualization denoising_stats.qzv
+		"""
 }
